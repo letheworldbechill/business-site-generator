@@ -1,0 +1,243 @@
+What you want now is the first real product milestone—the smallest version of Smooth Builder that a business could actually pay for.
+
+This is your MVP that produces revenue, not just a technical demo.
+
+The key principle:
+
+Build the smallest generator that produces real business websites.
+
+Everything else can come later.
+
+Smooth Builder — First Paid Product (MVP)
+
+Goal:
+
+A business can create and publish a professional website in under 5 minutes.
+
+That’s the entire promise.
+
+MVP Feature Set (Only 6 Features)
+
+These are the minimum features that produce value.
+
+1. Industry Website Generator
+
+Instead of building pages manually, the user chooses:
+
+Industry
+City
+Company name
+Services
+Logo
+Contact info
+
+Example input:
+
+Industry: Treuhand
+City: Zurich
+Company: Müller Treuhand
+Services:
+- Accounting
+- Tax Consulting
+- Payroll
+
+Smooth Builder generates a full website.
+
+Generated Pages
+Home
+Services
+About
+Contact
+Privacy
+Impressum
+
+Static HTML.
+
+2. 3 High-Converting Templates
+
+Do not build many templates.
+
+Build 3 excellent ones.
+
+Example:
+
+Professional Services
+SaaS Startup
+Local Business
+
+Each template includes:
+
+Hero
+Trust section
+Services
+Testimonials
+CTA
+Footer
+3. Instant Branding
+
+User uploads:
+
+logo
+primary color
+secondary color
+
+The Design Token Engine applies branding globally.
+
+This gives the impression of a fully custom design.
+
+4. Contact Form (Lead Capture)
+
+Every site must include:
+
+contact form
+email capture
+CTA buttons
+
+Form submissions go to:
+
+email
+or simple API
+
+This is how businesses measure value.
+
+5. SEO-Optimized Structure
+
+Every generated page includes:
+
+correct heading structure
+meta tags
+OpenGraph tags
+sitemap
+schema markup
+
+This alone makes the builder attractive.
+
+6. One-Click Static Export
+
+User downloads:
+
+index.html
+styles.css
+runtime.js
+images/
+
+Deploy anywhere:
+
+Netlify
+Vercel
+Cloudflare Pages
+S3
+
+This matches your Turbo static architecture.
+
+What You DO NOT Build Yet
+
+To keep MVP small, skip:
+
+drag-and-drop editor
+animations
+plugin system
+CMS collections
+AI generation
+design marketplace
+
+Those come later.
+
+MVP Architecture
+
+You only need 4 core systems initially.
+
+Content Graph
+Design Tokens
+Generator Pipeline
+Template Engine
+
+The block-tree editor can wait.
+
+MVP Flow
+
+User experience:
+
+1. Choose industry
+2. Enter company info
+3. Upload logo
+4. Choose color
+5. Generate website
+6. Download or publish
+
+Time required:
+
+3 minutes
+Example Generated Site
+
+A Swiss accountant enters details.
+
+Smooth Builder generates:
+
+muller-treuhand.ch
+
+Home
+Services
+About
+Contact
+Impressum
+Datenschutz
+
+Everything static.
+
+Why Businesses Will Pay
+
+Because the builder solves:
+
+expensive agency websites
+slow development
+SEO setup
+legal pages
+branding
+
+For them.
+
+Typical agency site cost:
+
+CHF 3,000–10,000
+
+Smooth Builder could replace that for:
+
+CHF 29/month
+Development Timeline
+
+If you follow the roadmap we built earlier, MVP could be finished in roughly:
+
+4–6 weeks
+
+Phases:
+
+week 1: generator engine
+week 2: templates
+week 3: token system
+week 4: export + UI
+week 5: polish
+week 6: launch
+After MVP (Phase 2)
+
+Once people start using it, add:
+
+block editor
+CMS collections
+programmatic SEO pages
+AI site generation
+theme marketplace
+
+But only after MVP.
+
+The Real Goal
+
+Your first milestone is not:
+
+perfect builder
+
+It is:
+
+first customer
+
+Once a single business launches a site with Smooth Builder, the product becomes real.

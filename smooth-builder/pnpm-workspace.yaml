@@ -1,0 +1,21 @@
+packages:
+  # Foundation
+  - 'packages/foundation/types'
+  - 'packages/foundation/utils'
+
+  # Core
+  - 'packages/core/content-graph'
+  - 'packages/core/tokens'
+
+  # Generator
+  - 'packages/generator/html'
+  - 'packages/generator/css'
+  - 'packages/generator/runtime'
+  - 'packages/generator/export'
+
+  # Templates & Legal
+  - 'packages/templates'
+  - 'packages/legal'
+
+  # Web Application
+  - 'apps/web'
