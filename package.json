@@ -1,0 +1,47 @@
+{
+  "name": "smooth-builder-monorepo",
+  "version": "5.0.0",
+  "private": true,
+  "description": "Smooth Builder 5.0 - Modularer Website-Builder für den Schweizer Markt",
+  "author": "Smooth Builder Team",
+  "license": "UNLICENSED",
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @sb/web dev",
+    "build": "pnpm run build:packages && pnpm run build:app",
+    "build:packages": "pnpm -r --filter './packages/*' build",
+    "build:app": "pnpm --filter @sb/web build",
+    "preview": "pnpm --filter @sb/web preview",
+    "test": "pnpm -r test",
+    "test:watch": "pnpm -r test:watch",
+    "lint": "pnpm -r lint",
+    "lint:fix": "pnpm -r lint:fix",
+    "typecheck": "pnpm -r typecheck",
+    "clean": "pnpm -r clean && rm -rf node_modules",
+    "reset": "pnpm clean && pnpm install",
+    "format": "prettier --write \"packages/**/*.{ts,tsx,json}\"",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "pnpm build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.0",
+    "@types/node": "^20.11.0",
+    "prettier": "^3.2.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "typescript": "^5.3.3"
+    }
+  }
+}

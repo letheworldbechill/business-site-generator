@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    // Sprache & Module
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+
+    // Typ-Prüfung
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Emit
+    "noEmit": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    // Interop
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+
+    // JSX (für React-Packages)
+    "jsx": "react-jsx",
+
+    // Pfad-Aliase für Monorepo
+    "baseUrl": ".",
+    "paths": {
+      "@sb/types": ["packages/types/src/index.ts"],
+      "@sb/utils": ["packages/utils/src/index.ts"],
+      "@sb/history": ["packages/history/src/index.ts"],
+      "@sb/storage": ["packages/storage/src/index.ts"],
+      "@sb/store": ["packages/store/src/index.ts"],
+      "@sb/store/*": ["packages/store/src/*"],
+      "@sb/sections": ["packages/sections/src/index.ts"],
+      "@sb/templates": ["packages/templates/src/index.ts"],
+      "@sb/generators": ["packages/generators/src/index.ts"],
+      "@sb/exporters": ["packages/exporters/src/index.ts"],
+      "@sb/ui": ["packages/ui/src/index.ts"],
+      "@sb/ui/*": ["packages/ui/src/*"],
+      "@sb/preview": ["packages/preview/src/index.ts"],
+      "@sb/app": ["packages/app/src/index.ts"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "**/node_modules",
+    "**/dist",
+    "**/build",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ]
+}
